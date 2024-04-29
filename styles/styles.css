@@ -1,0 +1,173 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted size to 300px */
+    grid-gap: 20px;
+}
+
+.item {
+    border: none; /* Remove border */
+    padding: 10px;
+    text-align: center;
+}
+
+.item img {
+    width: 100%; /* Ensure image fills container */
+    height: 700px; /* Set height to maintain aspect ratio */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+    transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.item img:hover {
+    transform: scale(1.05); /* Scale up image on hover */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.profile-image {
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+.simumatik-project .project-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; /* Add margin for spacing */
+}
+
+.simumatik-project .content-container {
+    display: flex;
+    width: 100%;
+}
+
+.simumatik-project .image-container,
+.simumatik-project .video-container {
+    flex: 1; /* Equal width for both containers */
+    border-radius: 10px;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.simumatik-project .image-container img,
+.simumatik-project .video-container iframe {
+    width: 100%;
+    height: 100%; /* Adjust height to 100% */
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+.simumatik-project .image-container {
+    flex: 1; /* Take up available space */
+    border-radius: 10px;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 10px; /* Add margin to the right side */
+}
+.simumatik-project .image-container:hover img {
+    transform: scale(1.05);
+}
+
+.simumatik-project .video-container {
+    position: relative; /* Ensure the container's positioning context */
+}
+
+.simumatik-project .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+
+/* Update CSS for certificates section with hover effects and background color */
+
+#certificates {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#certificates h2 {
+    margin-bottom: 30px;
+}
+
+#certificates .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+#certificates .certificate {
+    text-align: center;
+}
+
+#certificates .certificate .image-container {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden; /* Hide overflowing content (for circular shape) */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+#certificates .certificate .image-container img {
+    width: 200px;
+    height: 200px;
+}
+
+#certificates .certificate:hover .image-container {
+    transform: scale(1.1); /* Scale up image on hover */
+}
+
+#certificates .certificate p {
+    margin-top: 10px;
+    background-color: #333; /* Add semi-transparent background color */
+    color: #fff; /* Text color */
+    padding: 10px; /* Add padding for readability */
+    border-radius: 0 0 50% 50%; /* Adjust border radius for the bottom */
+}
