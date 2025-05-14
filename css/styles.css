@@ -1,0 +1,337 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+/* Animations */
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Layouts */
+.project-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111; /* Dark gray background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Dark Mode Specific Styles */
+.hero-section {
+    padding: 150px 0;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #ccc; /* Light gray */
+    margin-bottom: 10px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #fff; /* White text */
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    color: #ccc; /* Light gray */
+    margin-bottom: 40px;
+}
+
+.hero-buttons .btn {
+    margin: 0 10px;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #007BFF; /* Blue background on hover */
+    color: #fff; /* White text on hover */
+    border: 2px solid #fff; /* White border on hover */
+}
+
+.btn-outline-light {
+    background-color: transparent;
+    color: #fff; /* White text */
+    border: 2px solid #fff; /* White border */
+}
+
+.btn-outline-light:hover {
+    background-color: #fff; /* White background on hover */
+    color: #000; /* Black text on hover */
+}
+
+.hero-image {
+    width: 300px;
+    height: 300px;
+    border: 5px solid #fff;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Skills Section */
+#skills {
+    background-color: #111; /* Dark gray background */
+    padding: 80px 0;
+}
+
+.skill-box {
+    background: #222; /* Darker gray */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.1);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    color: #007BFF; /* Blue icon */
+}
+
+.skill-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff; /* White text */
+}
+
+.skill-description {
+    font-size: 1rem;
+    color: #ccc; /* Light gray */
+}
+
+/* Projects Section */
+#projects {
+    background-color: #000; /* Black background */
+    padding: 80px 0;
+}
+
+.project-media {
+    margin-bottom: 40px;
+}
+
+.project-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-img:hover {
+    transform: scale(1.05);
+}
+
+.video-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Certifications Section */
+#certifications {
+    background-color: #111; /* Dark gray background */
+    padding: 80px 0;
+}
+
+.certificates-container {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.certificate-slide {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.certificate-img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Contact Section */
+#contact {
+    background-color: #000; /* Black background */
+    padding: 80px 0;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact .form-control {
+    background-color: #222; /* Darker gray */
+    border: none;
+    color: #fff; /* White text */
+    margin-bottom: 15px;
+}
+
+.contact .form-control:focus {
+    background-color: #333; /* Lighter gray */
+    color: #fff; /* White text */
+}
+
+.contact button {
+    background-color: #007BFF; /* Blue background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #111; /* Dark gray background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+footer .social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .social-links li a {
+    color: #fff; /* White text */
+    text-decoration: none;
+}
+
+footer .social-links li a:hover {
+    text-decoration: underline;
+}
+/* Featured Projects Section */
+.featured-projects {
+    background-color: #111; /* Dark gray background */
+    padding: 80px 0;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #ccc; /* Light gray */
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.project-card {
+    background: #222; /* Darker gray */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.1);
+}
+
+.project-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #007BFF; /* Blue accent */
+}
+
+.project-card-body {
+    padding: 20px;
+}
+
+.project-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff; /* White text */
+    margin-bottom: 10px;
+}
+
+.project-card-description {
+    font-size: 1rem;
+    color: #ccc; /* Light gray */
+    margin-bottom: 20px;
+}
+
+.project-card-buttons .btn {
+    margin: 5px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+}
+
+/* Video Embed Styling */
+.video-wrapper {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    border-bottom: 2px solid #007BFF; /* Blue accent */
+}
+
+.project-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Adjust project card for video layout */
+.project-card {
+    background: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.1);
+}
+
+.project-card-body {
+    padding: 20px;
+}
